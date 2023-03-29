@@ -13,7 +13,8 @@
 #hero .nav-container .logo img {
   width: 40%;
 }
-#hero .nav-container .nav-lavel, #hero .nav-container .nav-imput {
+#hero .nav-container .nav-label,
+#hero .nav-container .nav-imput {
   display: none;
 }
 #hero .nav-container #nav-bar ul {
