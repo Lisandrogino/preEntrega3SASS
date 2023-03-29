@@ -22,19 +22,13 @@
   gap: 3em;
   list-style-type: none;
 }
-#hero .nav-container #nav-bar ul {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 3em;
-  list-style-type: none;
-}
 #hero .nav-container #nav-bar ul .nav-icons {
   text-decoration: none;
   margin: 10px;
   color: black;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-#hero .nav-container #nav-bar ul .nav-icons .nav-icons::after {
+#hero .nav-container #nav-bar ul .nav-icons::after {
   content: "";
   display: block;
   background: black;
@@ -47,6 +41,6 @@
   transition: clip-path 0.5s;
   transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 }
-#hero .nav-container #nav-bar ul .nav-icons .nav-icons::after .nav-icons:hover {
+#hero .nav-container #nav-bar ul .nav-icons:hover {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }/*# sourceMappingURL=main.css.map */

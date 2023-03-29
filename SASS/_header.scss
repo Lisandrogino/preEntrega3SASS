@@ -18,13 +18,7 @@
         .nav-lavel, .nav-imput{
             display: none;}
 
-        #nav-bar ul{
-            display: grid;
-            grid-auto-flow: column;
-            gap: 3em;
-            list-style-type: none;  
-        }
-
+       
         #nav-bar ul{
             display: grid;
             grid-auto-flow: column;
@@ -37,7 +31,7 @@
                 color: black;
                 --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 
-                .nav-icons::after {
+                &::after {
                     content: "";
                     display: block;
                     background: black;
@@ -47,9 +41,9 @@
                     clip-path: var(--clippy);
                     transition: clip-path .5s;
 
-                    .nav-icons:hover {
-                        --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                    }
+                }
+                &:hover {
+                    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
             }
             
