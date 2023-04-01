@@ -13,8 +13,7 @@
 #hero .nav-container .logo img {
   width: 40%;
 }
-#hero .nav-container .nav-label,
-#hero .nav-container .nav-imput {
+#hero .nav-container label, #hero .nav-container .nav-input {
   display: none;
 }
 #hero .nav-container #nav-bar ul {
@@ -44,4 +43,32 @@
 }
 #hero .nav-container #nav-bar ul .nav-icons:hover {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 768px) {
+  #hero .nav-lavel {
+    display: block;
+    cursor: pointer;
+  }
+  #hero .nav-input:checked + #nav-bar ul {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  #hero #nav-bar ul {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #D9D9DD;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    transition: -webkit-clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  }
 }/*# sourceMappingURL=main.css.map */
