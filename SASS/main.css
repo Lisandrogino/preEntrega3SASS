@@ -142,7 +142,7 @@
   margin-bottom: 10px;
   text-align: center;
 }
-#footer .footer-conteiner-conteiner .footer-conteiner .footer-contact-text {
+#footer .footer-conteiner-conteiner .footer-conteiner .footer-contact .footer-text {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
@@ -278,4 +278,43 @@ main .productosDestacados-conteiner-conteiner #outstanding .card-conteiner-conte
 .main .gallery .galery__picture--p8:hover {
   transform: scale(1.1) rotate(-5deg);
   transition: 0.7s;
+}
+
+.empresa .empresa__conteiner {
+  position: relative;
+  z-index: -100;
+}
+.empresa .empresa__conteiner .empresa__title {
+  text-align: center;
+  font-weight: 700px;
+  margin: 20px 0px 10px;
+}
+.empresa .empresa__conteiner .empresa__text {
+  text-align: center;
+  margin: 20px 0px 10px;
+  font-family: "Dancing Script";
+  font-weight: 700;
+}
+.empresa .empresa__conteiner .empresa__bootstrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.empresa .empresa__conteiner .empresa__bootstrap .empresa__card--card1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: -100;
+}
+.empresa .empresa__conteiner .empresa__bootstrap .empresa__card--card2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: -100;
 }/*# sourceMappingURL=main.css.map */
