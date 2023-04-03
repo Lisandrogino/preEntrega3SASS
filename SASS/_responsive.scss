@@ -1,4 +1,5 @@
 
+
 @media (max-width: 768px) {
     
     #hero{
@@ -29,6 +30,46 @@
         }
     }
 }
+/*-------------------HOME-----------------*/
+
+
+@media (max-width:600px){
+    .card-container, #card{
+      display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 5%, 10%;
+          padding: 10px;
+      
+          gap: 12px;
+          transition: gap 200ms;
+    }
+    .productosDestacados-conteiner-conteiner{
+
+        #outstanding{
+
+            .card-conteiner-conteiner{
+
+                .card-container{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+        }
+    }
+  }
+
+  /*---------------Clientes----------------*/
+
+  @media (max-width:768px){
+        .main{
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+  }
 
 
 /*-------------------FOOTER---------------*/
@@ -61,6 +102,7 @@
     
                 .footer-social{
                     margin: 15px 10px;
+                    align-items: center;
             
                     & .footer-icon{
                         border: 1px solid black;
@@ -69,7 +111,8 @@
                         height: auto;
                         margin: 5px;
                     }
-            
+
+                    
                     & .footer__icon--facebook:hover{
                         transform: scale(1.2);
                     }
@@ -83,7 +126,7 @@
         }
 
         .footer-image{
-            &-img{
+            .footer-img{
                 display: none;
             }
             
